@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>FotballHjørnErik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Overskrift og meny -->
+    <header>
+        <h1>FotballHjørnErik</h1>
+        <nav>
+            <a href="#hjem">Hjem</a>
+            <a href="#produkter">Produkter</a>
+            <a href="#om">Om oss</a>
+        </nav>
+    </header>
+
+    <!-- Forside -->
+    <section id="hjem">
+        <h2>Velkommen til FotballHjørnErik!</h2>
+        <p>Her finner du spesial Erik fotballutstyr.</p>
+    </section>
+
+    <!-- Produkter -->
+    <main id="produkter">
+        <h2>Våre produkter</h2>
+
+        <div class="produkter">
+
+            <div class="produkt">
+                <img src="bilder/fotball.jpg" alt="Fotball">
+                <h3>Fotball</h3>
+                <p>Pris: 299 kr</p>
+                <button onclick="leggIKurv('Fotball', 299)">
+                    Legg i handlekurv
+                </button>
+            </div>
+
+            <div class="produkt">
+                <img src="bilder/sko.jpg" alt="Fotballsko">
+                <h3>Fotballsko</h3>
+                <p>Pris: 899 kr</p>
+                <button onclick="leggIKurv('Fotballsko', 899)">
+                    Legg i handlekurv
+                </button>
+            </div>
+
+            <div class="produkt">
+                <img src="bilder/legskinn.jpg" alt="Leggbeskyttere">
+                <h3>Leggbeskyttere</h3>
+                <p>Pris: 149 kr</p>
+                <button onclick="leggIKurv('Leggbeskyttere', 149)">
+                    Legg i handlekurv
+                </button>
+            </div>
+
+            <div class="produkt">
+                <img src="bilder/drakt.jpg" alt="Keeperhansker">
+                <h3>Keeperhansker</h3>
+                <p>Pris: 399 kr</p>
+                <button onclick="leggIKurv('Keeperhansker', 399)">
+                    Legg i handlekurv
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Handlekurv -->
+    <section class="handlekurv">
+        <h2>Handlekurv</h2>
+        <p>Antall varer: <span id="antall">0</span></p>
+        <ul id="kurvliste">
+            <li>Handlekurven er tom.</li>
+        </ul>
+        <p>Totalt: <span id="total">0</span> kr</p>
+        <button onclick="tomKurv()">Tøm handlekurven</button>
+    </section>
+
+    <!-- Om butikken -->
+    <section id="om">
+        <h2>Om oss</h2>
+        <p>Vi selger spesial Erik fotballutstyr til trening og kamp.</p>
+    </section>
+
+    <!-- Bunntekst -->
+    <footer>    
+        <p>FotballHjørnErik © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+/* Utseendet til nettsiden */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+/* Overskrift og meny */
+header {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Lenker i menyen */
+nav a {
+    color: white;
+    margin: 10px;
+}
+
+/* Forsiden og informasjonen */
+section, main {
+    padding: 20px;
+}
+
+/* Produktene vises ved siden av hverandre */
+.produkter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Boksene til produktene */
+.produkt {
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Bilder av produktene */
+.produkt img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* Knapper */
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Handlekurven */
+.handlekurv {
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+/* Bunnteksten */
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
